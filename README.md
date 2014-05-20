@@ -9,7 +9,7 @@ It can retrieve information:
 miuri = require('miuri.js') // when run on Node.js
 
 uri = new miuri('http://google.com')  
-uri.hostname()  // google.com  
+uri.host()  // google.com  
 uri.protocol()  // http  
 uri.path()      // /  
 ```
@@ -28,7 +28,7 @@ With Miuri you can build full URIs:
 
 ```javascript
 uri = new miuri()
-uri.hostname('bing.com')
+uri.host('bing.com')
   .protocol('http')
   .path('search')
   .query({
